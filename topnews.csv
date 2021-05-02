@@ -1,0 +1,68 @@
+"Restricting the Weak-Generative Capacity of Synchronous
+Tree-Adjoining Grammars"
+"
+The formalism of synchronous tree-adjoining grammars, a variant of
+standard tree-adjoining grammars (TAG), was intended to allow the use
+of TAGs for language transduction in addition to language
+specification.  In previous work, the definition of the transduction
+relation defined by a synchronous TAG was given by appeal to an
+iterative rewriting process.  The rewriting definition of derivation
+is problematic in that it greatly extends the expressivity of the
+formalism and makes the design of parsing algorithms difficult if not
+impossible.
+We introduce a simple, natural definition of synchronous
+tree-adjoining derivation, based on isomorphisms between standard
+tree-adjoining derivations, that avoids the expressivity and
+implementability problems of the original rewriting definition.  The
+decrease in expressivity, which would otherwise make the method
+unusable, is offset by the incorporation of an alternative definition
+of standard tree-adjoining derivation, previously proposed for
+completely separate reasons, thereby making it practical to entertain
+using the natural definition of synchronous derivation.  Nonetheless,
+some remaining problematic cases call for yet more flexibility in the
+definition; the isomorphism requirement may have to be relaxed.  It
+remains for future research to tune the exact requirements on the
+allowable mappings.
+"
+"
+ The formalism of synchronous tree-adjoining grammars ","
+The original definition of derivation for synchronous TAGs was based
+on the iterative rewriting of one derived tree pair into another.  In
+this section, we provide a more precise description of this approach
+to derivation, along with a discussion of its problems.  First,
+however, we digress to discuss some notational issues.
+","
+The notion of derivation just presented for synchronous TAGs is quite
+nonstandard for the TAG literature in being ``flat'' and rewriting
+oriented.  Recall that the standard definition of TAG derivation, due
+to v87, is hierarchically structured in terms of derivation trees, trees that serve to characterize the operations
+required to construct a particular derived tree, and hence its yield.
+","
+We show in this section that the natural definition of synchronous
+derivation solves the two problems described in
+ Section ","
+Along with the advantages of the new definition of synchronous TAG
+derivation, new problems are introduced as well.  First, the exclusion
+of multiple adjunctions at a single address is problematic for
+synchronous TAG derivations.  Second, the isomorphism requirement
+between the derivation trees may be too strong as well.  The former
+problem admits of a straightforward solution, which we describe below.
+The latter does not; we describe the symptoms of the problem but leave
+its resolution as an open issue for further research.
+","
+We have introduced a simple, natural definition of synchronous
+tree-adjoining derivation, based on isomorphisms between standard
+tree-adjoining derivations, that avoids the expressivity and
+implementability problems of the original rewriting definition.  The
+decrease in expressivity, which would otherwise make the method
+unusable, is offset by the incorporation of an alternative definition
+of standard tree-adjoining derivation, previously proposed for
+completely separate reasons, that allows for multiple adjunctions at a
+single node in an elementary tree.  The increased flexibility from the
+ability to perform such multiple adjunctions makes it conceivable to
+entertain using the natural definition of synchronous derivation.
+Nonetheless, some remaining problematic cases call for yet more
+flexibility in the definition; the isomorphism requirement may have to
+be relaxed.  It remains for future research to tune the exact
+requirements on the allowable mappings.
+"
